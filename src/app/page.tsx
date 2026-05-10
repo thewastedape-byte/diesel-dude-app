@@ -180,10 +180,27 @@ export default function HomePage() {
                       <span className="text-base">🔧</span>
                       <p className="text-xs font-bold" style={{ color: '#C68B3A', fontFamily: 'Georgia, serif' }}>Diesel Dude</p>
                     </div>
-                    <div className="panel px-4 py-3 text-sm leading-relaxed"
-                      style={{ color: '#F5F0E8', fontFamily: 'Georgia, serif', whiteSpace: 'pre-wrap' }}>
-                      {msg.content}
-                    </div>
+                    {(() => {
+                      const parts = msg.content.split(/\nSOURCES:\n?/)
+                      const body = parts[0]
+                      const sources = parts[1] ? parts[1].split('\n').map(s => s.replace(/^-\s*/, '')).filter(Boolean) : []
+                      return (
+                        <>
+                          <div className="panel px-4 py-3 text-sm leading-relaxed"
+                            style={{ color: '#F5F0E8', fontFamily: 'Georgia, serif', whiteSpace: 'pre-wrap' }}>
+                            {body}
+                          </div>
+                          {sources.length > 0 && (
+                            <div className="px-3 py-2 rounded-lg mt-1" style={{ background: 'rgba(198,139,58,0.06)', border: '1px solid rgba(198,139,58,0.2)' }}>
+                              <p className="text-xs font-bold mb-1" style={{ color: '#C68B3A', fontFamily: 'Georgia, serif' }}>📖 Sources</p>
+                              {sources.map((s, i) => (
+                                <p key={i} className="text-xs" style={{ color: 'rgba(198,139,58,0.75)', fontFamily: 'Georgia, serif', lineHeight: '1.6' }}>• {s}</p>
+                              ))}
+                            </div>
+                          )}
+                        </>
+                      )
+                    })()}
                     <button onClick={() => saveToLog(msg)}
                       className="self-start text-xs px-3 py-1.5 rounded-lg"
                       style={{ background: 'rgba(198,139,58,0.12)', color: '#C68B3A', border: '1px solid rgba(198,139,58,0.25)', fontFamily: 'Georgia, serif' }}>

@@ -1,6 +1,7 @@
 ﻿'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import Logo from '@/components/Logo'
 
 const STEPS = [
@@ -44,6 +45,7 @@ const STEPS = [
 ]
 
 export default function SetupPage() {
+  const router = useRouter()
   const [completed, setCompleted] = useState<Record<string, boolean>>({})
   const [current, setCurrent] = useState(0)
 
