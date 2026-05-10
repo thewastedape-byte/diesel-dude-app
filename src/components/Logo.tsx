@@ -6,7 +6,7 @@ interface LogoProps {
 }
 
 export default function Logo({ size = 'md' }: LogoProps) {
-  const sizes = { sm: 80, md: 100, lg: 140 }
+  const sizes = { sm: 140, md: 180, lg: 240 }
   const px = sizes[size]
   return (
     <div className="flex items-center gap-2">
