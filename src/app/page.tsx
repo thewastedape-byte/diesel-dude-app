@@ -195,7 +195,7 @@ export default function HomePage() {
             ))}
             {loading && (
               <div className="flex items-center gap-2">
-                <span className="text-base">ðŸ"§</span>
+                <div className="flex items-center gap-3"><span style={{display:"inline-block",animation:"spin 1s linear infinite",fontSize:"18px"}}>⚙️</span><span style={{color:"rgba(198,139,58,0.7)",fontFamily:"Georgia,serif",fontSize:"14px"}}>Diagnosing...</span></div>
                 <div className="panel px-4 py-3 text-sm" style={dimStyle}>Diagnosing...</div>
               </div>
             )}
@@ -208,7 +208,7 @@ export default function HomePage() {
         style={{ background: 'rgba(20,8,2,0.72)', borderTop: '1px solid rgba(198,139,58,0.25)', paddingTop: '8px' }}>
         {manualMode && (
           <div className="flex items-center gap-2 mb-2 px-1">
-            <span className="text-xs font-bold" style={{ color: '#C68B3A', fontFamily: 'Georgia, serif' }}>&#128218; Manual Mode â€" searching Cummins, CAT, Detroit, Power Stroke specs</span>
+            <span className="text-xs font-bold" style={{ color: '#C68B3A', fontFamily: 'Georgia, serif' }}>📖 Manual Mode — searching Cummins, CAT, Detroit, Power Stroke specs</span>
             <button onClick={() => setManualMode(false)} style={{ background: 'none', border: 'none', color: 'rgba(245,240,232,0.4)', cursor: 'pointer', fontSize: '14px' }}>x</button>
           </div>
         )}

@@ -22,11 +22,14 @@ export default function NavBar() {
         <Link href="/service" className={`nav-item ${pathname === '/service' ? 'active' : ''}`}>
           <span className="nav-icon">🔩</span><span>Service</span>
         </Link>
-        <Link href="/poolchat" className={`nav-item ${pathname === '/poolchat' ? 'active' : ''}`}>
-          <span className="nav-icon">💬</span><span>Pool Chat</span>
-        </Link>
         <Link href="/pm" className={`nav-item ${pathname === '/pm' ? 'active' : ''}`}>
           <span className="nav-icon">📅</span><span>PM</span>
+        </Link>
+        <Link href="/log" className={`nav-item ${pathname === '/log' ? 'active' : ''}`}>
+          <span className="nav-icon">📋</span><span>Log</span>
+        </Link>
+        <Link href="/diagrams" className={`nav-item ${pathname === '/diagrams' ? 'active' : ''}`}>
+          <span className="nav-icon">📐</span><span>Library</span>
         </Link>
         <Link href="/settings" className={`nav-item ${pathname === '/settings' ? 'active' : ''}`}>
           <span className="nav-icon">⚙️</span><span>Settings</span>
@@ -43,11 +46,11 @@ export default function NavBar() {
       <Link href="/assets" className={`nav-item ${pathname === '/assets' ? 'active' : ''}`}>
         <span className="nav-icon">🚛</span><span>Assets</span>
       </Link>
-      <Link href="/codes" className={`nav-item ${pathname === '/codes' ? 'active' : ''}`}>
-        <span className="nav-icon">⚠️</span><span>Codes</span>
+      <Link href="/log" className={`nav-item ${pathname === '/log' ? 'active' : ''}`}>
+        <span className="nav-icon">📋</span><span>Log</span>
       </Link>
       <Link href="/diagrams" className={`nav-item ${pathname === '/diagrams' ? 'active' : ''}`}>
-        <span className="nav-icon">📐</span><span>Diagrams</span>
+        <span className="nav-icon">📐</span><span>Library</span>
       </Link>
       <Link href="/settings" className={`nav-item ${pathname === '/settings' ? 'active' : ''}`}>
         <span className="nav-icon">⚙️</span><span>Settings</span>

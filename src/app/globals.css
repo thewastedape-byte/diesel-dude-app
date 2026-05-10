@@ -111,6 +111,16 @@ main {
   line-height: 1;
 }
 
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 @media print {
   .no-print { display: none !important; }
   nav { display: none !important; }

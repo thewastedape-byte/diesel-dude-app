@@ -124,7 +124,11 @@ export default function PMPage() {
     <div className="bg-plate min-h-screen flex flex-col">
       <header className="flex items-center justify-between px-4 py-3 sticky top-0 z-40"
         style={{ background: 'rgba(20,8,2,0.70)', borderBottom: '1px solid rgba(198,139,58,0.3)' }}>
-        <Logo size="sm" />
+        <div className="flex items-center gap-3">
+          <button onClick={() => router.push('/')}
+            style={{ background: 'rgba(198,139,58,0.12)', border: '1px solid rgba(198,139,58,0.3)', borderRadius: '8px', padding: '6px 10px', color: '#C68B3A', cursor: 'pointer', fontSize: '16px' }}>←</button>
+          <Logo size="sm" />
+        </div>
         <button onClick={() => setShowAdd(!showAdd)}
           className="text-xs px-3 py-1.5 rounded-lg font-bold"
           style={{ background: '#C68B3A', color: '#3D1C02', fontFamily: 'Georgia, serif', border: 'none', cursor: 'pointer' }}>

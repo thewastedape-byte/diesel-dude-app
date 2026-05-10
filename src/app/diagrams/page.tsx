@@ -16,7 +16,7 @@ export default function DiagramsPage() {
       <header className="flex items-center justify-between px-4 py-3 sticky top-0 z-40"
         style={{ background: 'rgba(20,8,2,0.72)', borderBottom: '1px solid rgba(198,139,58,0.3)' }}>
         <Logo size="sm" />
-        <span className="text-xs" style={labelStyle}>System Diagrams</span>
+        <span className="text-xs" style={labelStyle}>📖 Library</span>
       </header>
 
       {selected && (
@@ -39,8 +39,33 @@ export default function DiagramsPage() {
       )}
 
       <main className="flex-1 overflow-y-auto px-4 py-4 pb-28">
-        <h1 className="text-xl font-bold mb-1" style={{ color: '#F5F0E8', fontFamily: 'Georgia, serif' }}>System Diagrams</h1>
-        <p className="text-xs mb-5" style={dimStyle}>{DIAGRAMS.length} diagrams — tap any to view full size</p>
+        <h1 className="text-xl font-bold mb-1" style={{ color: '#F5F0E8', fontFamily: 'Georgia, serif' }}>Library</h1>
+        <p className="text-xs mb-4" style={dimStyle}>Diagrams, specs, and service manuals</p>
+
+        {/* Service Manuals Section */}
+        <div className="mb-6">
+          <p className="text-xs uppercase tracking-wider mb-3" style={labelStyle}>Service Manuals</p>
+          <div className="flex flex-col gap-2">
+            {[
+              { name: 'Cummins ISX / ISB / ISC', note: 'Search via AI — type your model' },
+              { name: 'CAT C7 / C9 / C15', note: 'Search via AI — type your model' },
+              { name: 'Detroit Series 60 / DD13 / DD15', note: 'Search via AI — type your model' },
+              { name: 'Ford Power Stroke 6.7 / 7.3', note: 'Search via AI — type your model' },
+              { name: 'Duramax LML / LBZ / LMM', note: 'Search via AI — type your model' },
+            ].map(m => (
+              <div key={m.name} className="panel p-3 flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-bold" style={{ color: '#F5F0E8', fontFamily: 'Georgia, serif' }}>{m.name}</p>
+                  <p className="text-xs" style={dimStyle}>{m.note}</p>
+                </div>
+                <a href="/" style={{ background: 'rgba(198,139,58,0.15)', color: '#C68B3A', border: '1px solid rgba(198,139,58,0.3)', borderRadius: '8px', padding: '6px 12px', fontSize: '12px', textDecoration: 'none', fontFamily: 'Georgia, serif', whiteSpace: 'nowrap' }}>Ask AI</a>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <p className="text-xs uppercase tracking-wider mb-3" style={labelStyle}>System Diagrams</p>
+        <p className="text-xs mb-4" style={dimStyle}>{DIAGRAMS.length} diagrams — tap any to view full size</p>
 
         {cats.map(cat => (
           <div key={cat} className="mb-5">
