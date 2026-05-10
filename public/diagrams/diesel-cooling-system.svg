@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="background:#1a0a02;font-family:Georgia,serif">
+  <text x="400" y="35" fill="#C68B3A" font-size="18" font-weight="bold" text-anchor="middle">Diesel Engine Cooling System</text>
+
+  <!-- Radiator -->
+  <rect x="30" y="100" width="100" height="180" rx="8" fill="#1a1a3a" stroke="#70a0d4" stroke-width="2"/>
+  <text x="80" y="180" fill="#F5F0E8" font-size="12" text-anchor="middle">Radiator</text>
+  <text x="80" y="197" fill="#70a0d4" font-size="9" text-anchor="middle">Coolant cools</text>
+  <text x="80" y="210" fill="#70a0d4" font-size="9" text-anchor="middle">here</text>
+
+  <!-- Water pump -->
+  <rect x="200" y="180" width="90" height="70" rx="6" fill="#2a1505" stroke="#C68B3A" stroke-width="2"/>
+  <text x="245" y="210" fill="#F5F0E8" font-size="11" text-anchor="middle">Water</text>
+  <text x="245" y="226" fill="#F5F0E8" font-size="11" text-anchor="middle">Pump</text>
+  <text x="245" y="242" fill="#C68B3A" font-size="9" text-anchor="middle">Belt driven</text>
+
+  <!-- Engine block -->
+  <rect x="350" y="150" width="180" height="160" rx="8" fill="#2a1505" stroke="#C68B3A" stroke-width="2"/>
+  <text x="440" y="215" fill="#F5F0E8" font-size="13" text-anchor="middle">Engine</text>
+  <text x="440" y="233" fill="#F5F0E8" font-size="13" text-anchor="middle">Block</text>
+  <text x="440" y="255" fill="#C68B3A" font-size="9" text-anchor="middle">185-220°F normal</text>
+  <text x="440" y="270" fill="#e87070" font-size="9" text-anchor="middle">248°F = shutdown</text>
+
+  <!-- Thermostat -->
+  <rect x="350" y="80" width="90" height="50" rx="6" fill="#2a1505" stroke="#C68B3A" stroke-width="2"/>
+  <text x="395" y="102" fill="#F5F0E8" font-size="10" text-anchor="middle">Thermostat</text>
+  <text x="395" y="118" fill="#C68B3A" font-size="9" text-anchor="middle">Opens 183-190°F</text>
+
+  <!-- Coolant temp sensor -->
+  <rect x="590" y="190" width="90" height="50" rx="6" fill="#1a3a1a" stroke="#70c070" stroke-width="1.5"/>
+  <text x="635" y="210" fill="#F5F0E8" font-size="10" text-anchor="middle">ECT</text>
+  <text x="635" y="226" fill="#70c070" font-size="9" text-anchor="middle">Sensor</text>
+
+  <!-- EGR cooler -->
+  <rect x="590" y="280" width="110" height="60" rx="6" fill="#2a1505" stroke="#e87070" stroke-width="2"/>
+  <text x="645" y="305" fill="#F5F0E8" font-size="10" text-anchor="middle">EGR</text>
+  <text x="645" y="320" fill="#F5F0E8" font-size="10" text-anchor="middle">Cooler</text>
+  <text x="645" y="335" fill="#e87070" font-size="8" text-anchor="middle">Common failure point</text>
+
+  <!-- Overflow tank -->
+  <rect x="200" y="80" width="90" height="60" rx="6" fill="#1a1a3a" stroke="#70a0d4" stroke-width="1.5"/>
+  <text x="245" y="105" fill="#F5F0E8" font-size="10" text-anchor="middle">Overflow</text>
+  <text x="245" y="120" fill="#F5F0E8" font-size="10" text-anchor="middle">Tank</text>
+  <text x="245" y="135" fill="#70a0d4" font-size="8" text-anchor="middle">Check daily</text>
+
+  <!-- Oil cooler -->
+  <rect x="350" y="340" width="180" height="60" rx="6" fill="#2a1505" stroke="#C68B3A" stroke-width="1.5"/>
+  <text x="440" y="368" fill="#F5F0E8" font-size="10" text-anchor="middle">Oil Cooler</text>
+  <text x="440" y="385" fill="#C68B3A" font-size="8" text-anchor="middle">Coolant cools engine oil</text>
+
+  <!-- Fan/air flow -->
+  <rect x="30" y="320" width="100" height="60" rx="6" fill="#1a1a1a" stroke="rgba(198,139,58,0.4)" stroke-width="1.5"/>
+  <text x="80" y="345" fill="#F5F0E8" font-size="10" text-anchor="middle">Cooling</text>
+  <text x="80" y="360" fill="#F5F0E8" font-size="10" text-anchor="middle">Fan</text>
+  <text x="80" y="375" fill="#C68B3A" font-size="8" text-anchor="middle">Viscous or elect.</text>
+
+  <!-- Arrows coolant flow -->
+  <line x1="130" y1="165" x2="198" y2="215" stroke="#70a0d4" stroke-width="2" marker-end="url(#arr3)"/>
+  <line x1="290" y1="215" x2="348" y2="215" stroke="#70a0d4" stroke-width="2" marker-end="url(#arr3)"/>
+  <line x1="530" y1="215" x2="588" y2="215" stroke="#70a0d4" stroke-width="1.5"/>
+  <line x1="395" y1="150" x2="395" y2="132" stroke="#70a0d4" stroke-width="1.5" marker-end="url(#arr3)"/>
+  <line x1="395" y1="80" x2="245" y2="140" stroke="#70a0d4" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="245" y1="140" x2="130" y2="165" stroke="#70a0d4" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+  <defs>
+    <marker id="arr3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#70a0d4"/>
+    </marker>
+  </defs>
+
+  <!-- Specs box -->
+  <rect x="30" y="410" width="740" height="70" rx="6" fill="rgba(198,139,58,0.06)" stroke="rgba(198,139,58,0.2)" stroke-width="1"/>
+  <text x="400" y="432" fill="#C68B3A" font-size="10" text-anchor="middle" font-weight="bold">COOLANT SPECS BY ENGINE</text>
+  <text x="200" y="450" fill="#F5F0E8" font-size="9" text-anchor="middle">Cummins: 42-58 qt • Change 300k mi ELC</text>
+  <text x="400" y="450" fill="#F5F0E8" font-size="9" text-anchor="middle">CAT C15: 52 qt • ELC or DEAC</text>
+  <text x="600" y="450" fill="#F5F0E8" font-size="9" text-anchor="middle">Detroit: 52 qt • OATX ELC</text>
+  <text x="400" y="468" fill="#e87070" font-size="9" text-anchor="middle">NEVER mix coolant types — causes gel, blocks passages</text>
+</svg>

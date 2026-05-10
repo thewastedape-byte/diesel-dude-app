@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="background:#1a0a02;font-family:Georgia,serif">
+  <text x="400" y="35" fill="#C68B3A" font-size="18" font-weight="bold" text-anchor="middle">Diesel Turbocharger System (VGT)</text>
+
+  <!-- Engine -->
+  <rect x="30" y="180" width="110" height="100" rx="8" fill="#2a1505" stroke="#C68B3A" stroke-width="2"/>
+  <text x="85" y="222" fill="#F5F0E8" font-size="12" text-anchor="middle">Engine</text>
+  <text x="85" y="240" fill="#C68B3A" font-size="9" text-anchor="middle">Exhaust out</text>
+  <text x="85" y="255" fill="#C68B3A" font-size="9" text-anchor="middle">Intake in</text>
+
+  <!-- Turbocharger housing -->
+  <ellipse cx="280" cy="220" rx="80" ry="80" fill="#2a1505" stroke="#e87070" stroke-width="2.5"/>
+  <text x="280" y="210" fill="#F5F0E8" font-size="13" font-weight="bold" text-anchor="middle">Turbo</text>
+  <text x="280" y="228" fill="#F5F0E8" font-size="10" text-anchor="middle">Turbine</text>
+  <text x="280" y="243" fill="#C68B3A" font-size="9" text-anchor="middle">VGT Actuator</text>
+
+  <!-- Compressor side -->
+  <ellipse cx="480" cy="220" rx="70" ry="70" fill="#1a1a3a" stroke="#70a0d4" stroke-width="2"/>
+  <text x="480" y="215" fill="#F5F0E8" font-size="12" font-weight="bold" text-anchor="middle">Compressor</text>
+  <text x="480" y="233" fill="#70a0d4" font-size="9" text-anchor="middle">Fresh air in</text>
+
+  <!-- Intercooler -->
+  <rect x="590" y="175" width="110" height="90" rx="8" fill="#1a1a3a" stroke="#70a0d4" stroke-width="2"/>
+  <text x="645" y="213" fill="#F5F0E8" font-size="11" text-anchor="middle">Inter-</text>
+  <text x="645" y="228" fill="#F5F0E8" font-size="11" text-anchor="middle">cooler</text>
+  <text x="645" y="248" fill="#70a0d4" font-size="9" text-anchor="middle">Cools charge air</text>
+
+  <!-- Air filter -->
+  <rect x="590" y="310" width="110" height="55" rx="6" fill="#1a2a1a" stroke="#70c070" stroke-width="1.5"/>
+  <text x="645" y="336" fill="#F5F0E8" font-size="10" text-anchor="middle">Air Filter</text>
+  <text x="645" y="352" fill="#70c070" font-size="9" text-anchor="middle">Replace every 1000hrs</text>
+
+  <!-- Engine intake manifold -->
+  <rect x="30" y="330" width="110" height="55" rx="6" fill="#1a2a1a" stroke="#70c070" stroke-width="1.5"/>
+  <text x="85" y="353" fill="#F5F0E8" font-size="10" text-anchor="middle">Intake</text>
+  <text x="85" y="368" fill="#F5F0E8" font-size="10" text-anchor="middle">Manifold</text>
+
+  <!-- VGT actuator -->
+  <rect x="240" y="330" width="80" height="50" rx="6" fill="#2a1505" stroke="#C68B3A" stroke-width="1.5"/>
+  <text x="280" y="352" fill="#F5F0E8" font-size="10" text-anchor="middle">VGT</text>
+  <text x="280" y="367" fill="#F5F0E8" font-size="10" text-anchor="middle">Actuator</text>
+
+  <!-- ECM -->
+  <rect x="350" y="350" width="100" height="50" rx="6" fill="#1a3a1a" stroke="#70c070" stroke-width="1.5"/>
+  <text x="400" y="373" fill="#F5F0E8" font-size="11" text-anchor="middle">ECM</text>
+  <text x="400" y="388" fill="#70c070" font-size="9" text-anchor="middle">Controls boost</text>
+
+  <!-- Arrows - exhaust flow (hot) -->
+  <line x1="140" y1="210" x2="198" y2="210" stroke="#e87070" stroke-width="3" marker-end="url(#hot)"/>
+  <text x="168" y="205" fill="#e87070" font-size="9">HOT</text>
+
+  <!-- Arrows - compressed air (cool) -->
+  <line x1="550" y1="210" x2="588" y2="210" stroke="#70a0d4" stroke-width="2.5" marker-end="url(#cool)"/>
+  <line x1="590" y1="340" x2="480" y2="290" stroke="#70a0d4" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="140" y1="370" x2="590" y2="370" stroke="#70c070" stroke-width="2" marker-end="url(#green)"/>
+  <line x1="700" y1="310" x2="700" y2="270" stroke="#70a0d4" stroke-width="2" marker-end="url(#cool)"/>
+
+  <!-- ECM to VGT control line -->
+  <line x1="350" y1="375" x2="322" y2="375" stroke="#70c070" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#green)"/>
+
+  <!-- Shaft connecting turbine and compressor -->
+  <line x1="360" y1="220" x2="410" y2="220" stroke="#C68B3A" stroke-width="4"/>
+  <text x="385" y="215" fill="#C68B3A" font-size="8" text-anchor="middle">SHAFT</text>
+
+  <defs>
+    <marker id="hot" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#e87070"/></marker>
+    <marker id="cool" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#70a0d4"/></marker>
+    <marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#70c070"/></marker>
+  </defs>
+
+  <!-- Warning box -->
+  <rect x="30" y="420" width="740" height="60" rx="6" fill="rgba(232,112,112,0.08)" stroke="rgba(232,112,112,0.25)" stroke-width="1"/>
+  <text x="400" y="442" fill="#e87070" font-size="10" text-anchor="middle" font-weight="bold">VGT FAULT CODES: P0045 (actuator open) P0046 (range) P0299 (underboost) P0234 (overboost)</text>
+  <text x="400" y="460" fill="#F5F0E8" font-size="9" text-anchor="middle">Check actuator position sensor first. Use Cummins Insite / CAT ET / DDL to command actuator test. Oil starvation kills turbos — always check oil before condemning turbo.</text>
+</svg>

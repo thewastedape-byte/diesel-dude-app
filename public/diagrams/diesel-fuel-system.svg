@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="background:#1a0a02;font-family:Georgia,serif">
+  <text x="400" y="35" fill="#C68B3A" font-size="18" font-weight="bold" text-anchor="middle">Diesel Common Rail Fuel System</text>
+
+  <!-- Fuel tank -->
+  <rect x="30" y="200" width="100" height="60" rx="8" fill="#2a1505" stroke="#C68B3A" stroke-width="2"/>
+  <text x="80" y="226" fill="#F5F0E8" font-size="11" text-anchor="middle">Fuel</text>
+  <text x="80" y="242" fill="#F5F0E8" font-size="11" text-anchor="middle">Tank</text>
+
+  <!-- Lift pump -->
+  <rect x="170" y="205" width="80" height="50" rx="6" fill="#2a1505" stroke="#C68B3A" stroke-width="2"/>
+  <text x="210" y="228" fill="#F5F0E8" font-size="10" text-anchor="middle">Lift</text>
+  <text x="210" y="243" fill="#F5F0E8" font-size="10" text-anchor="middle">Pump</text>
+  <text x="210" y="258" fill="#C68B3A" font-size="9" text-anchor="middle">60-80 psi</text>
+
+  <!-- Fuel filter/water separator -->
+  <rect x="290" y="190" width="80" height="80" rx="6" fill="#2a1505" stroke="#C68B3A" stroke-width="2"/>
+  <text x="330" y="218" fill="#F5F0E8" font-size="10" text-anchor="middle">Fuel</text>
+  <text x="330" y="233" fill="#F5F0E8" font-size="10" text-anchor="middle">Filter /</text>
+  <text x="330" y="248" fill="#F5F0E8" font-size="10" text-anchor="middle">Water Sep.</text>
+  <text x="330" y="263" fill="#e87070" font-size="9" text-anchor="middle">Change 15k mi</text>
+
+  <!-- High pressure pump (CP3/CP4) -->
+  <rect x="420" y="185" width="90" height="80" rx="6" fill="#2a1505" stroke="#e87070" stroke-width="2"/>
+  <text x="465" y="213" fill="#F5F0E8" font-size="10" text-anchor="middle">HP Pump</text>
+  <text x="465" y="228" fill="#F5F0E8" font-size="10" text-anchor="middle">(CP3/CP4)</text>
+  <text x="465" y="248" fill="#C68B3A" font-size="9" text-anchor="middle">26,000-30,000</text>
+  <text x="465" y="261" fill="#C68B3A" font-size="9" text-anchor="middle">psi</text>
+
+  <!-- Common rail -->
+  <rect x="550" y="160" width="200" height="40" rx="6" fill="#2a1505" stroke="#C68B3A" stroke-width="2"/>
+  <text x="650" y="178" fill="#F5F0E8" font-size="11" text-anchor="middle">Common Rail</text>
+  <text x="650" y="193" fill="#C68B3A" font-size="9" text-anchor="middle">High Pressure Accumulator</text>
+
+  <!-- Injectors -->
+  <rect x="555" y="260" width="45" height="60" rx="4" fill="#2a1505" stroke="#C68B3A" stroke-width="1.5"/>
+  <text x="578" y="285" fill="#F5F0E8" font-size="9" text-anchor="middle">Inj</text>
+  <text x="578" y="298" fill="#F5F0E8" font-size="9" text-anchor="middle">#1</text>
+  <rect x="615" y="260" width="45" height="60" rx="4" fill="#2a1505" stroke="#C68B3A" stroke-width="1.5"/>
+  <text x="638" y="285" fill="#F5F0E8" font-size="9" text-anchor="middle">Inj</text>
+  <text x="638" y="298" fill="#F5F0E8" font-size="9" text-anchor="middle">#2</text>
+  <rect x="675" y="260" width="45" height="60" rx="4" fill="#2a1505" stroke="#C68B3A" stroke-width="1.5"/>
+  <text x="698" y="285" fill="#F5F0E8" font-size="9" text-anchor="middle">Inj</text>
+  <text x="698" y="298" fill="#F5F0E8" font-size="9" text-anchor="middle">#3-6</text>
+
+  <!-- Return line -->
+  <rect x="30" y="340" width="730" height="20" rx="4" fill="none" stroke="#70a0d4" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="400" y="353" fill="#70a0d4" font-size="9" text-anchor="middle">Return line (low pressure back to tank)</text>
+
+  <!-- ECM -->
+  <rect x="290" y="380" width="120" height="50" rx="6" fill="#1a3a1a" stroke="#70c070" stroke-width="2"/>
+  <text x="350" y="403" fill="#F5F0E8" font-size="11" text-anchor="middle">ECM</text>
+  <text x="350" y="420" fill="#70c070" font-size="9" text-anchor="middle">Controls injector timing</text>
+
+  <!-- Arrows -->
+  <line x1="130" y1="230" x2="168" y2="230" stroke="#C68B3A" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="250" y1="230" x2="288" y2="230" stroke="#C68B3A" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="370" y1="230" x2="418" y2="230" stroke="#C68B3A" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="510" y1="210" x2="548" y2="185" stroke="#e87070" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="650" y1="200" x2="578" y2="258" stroke="#C68B3A" stroke-width="1.5"/>
+  <line x1="650" y1="200" x2="638" y2="258" stroke="#C68B3A" stroke-width="1.5"/>
+  <line x1="650" y1="200" x2="698" y2="258" stroke="#C68B3A" stroke-width="1.5"/>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#C68B3A"/>
+    </marker>
+  </defs>
+
+  <!-- Warning note -->
+  <rect x="30" y="390" width="240" height="60" rx="6" fill="rgba(232,112,112,0.1)" stroke="#e87070" stroke-width="1"/>
+  <text x="150" y="410" fill="#e87070" font-size="10" text-anchor="middle" font-weight="bold">CP4 WARNING</text>
+  <text x="150" y="425" fill="#F5F0E8" font-size="9" text-anchor="middle">Water contamination destroys</text>
+  <text x="150" y="438" fill="#F5F0E8" font-size="9" text-anchor="middle">CP4 pump. Change filters often.</text>
+</svg>

@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  background: #0d0a08;
+  color: #F5F0E8;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  overscroll-behavior: none;
+}
+
+.bg-plate {
+  background-image: url('/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100dvh;
+}
+
+/* Dark overlay on all main content areas so text is readable over diamond plate */
+main {
+  background: rgba(10, 4, 1, 0.72);
+}
+
+.panel {
+  background: rgba(30, 12, 4, 0.75);
+  border: 1px solid rgba(198, 139, 58, 0.35);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+}
+
+.btn-primary {
+  background: #C68B3A;
+  color: #3D1C02;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.input-field {
+  width: 100%;
+  background: rgba(245, 240, 232, 0.08);
+  border: 1px solid rgba(198, 139, 58, 0.3);
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: #F5F0E8;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: rgba(198, 139, 58, 0.7);
+}
+
+.input-field::placeholder {
+  color: rgba(245, 240, 232, 0.3);
+}
+
+.nav-bar {
+  background: rgba(20, 8, 2, 0.97);
+  border-top: 1px solid rgba(198, 139, 58, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0 4px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  color: rgba(245, 240, 232, 0.4);
+  font-family: 'Georgia', serif;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  min-width: 52px;
+  text-align: center;
+}
+
+.nav-item.active {
+  color: #C68B3A;
+}
+
+.nav-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  nav { display: none !important; }
+  header { display: none !important; }
+}
