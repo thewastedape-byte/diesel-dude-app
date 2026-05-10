@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -121,7 +121,7 @@ export default function SetupPage() {
               </Link>
             </div>
           ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: '220px 1fr', gap: '24px', alignItems: 'start' }}>
+            <div className="setup-grid">
 
               {/* Step list sidebar */}
               <div className="panel p-4">
