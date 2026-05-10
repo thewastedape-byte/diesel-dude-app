@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
@@ -236,7 +236,7 @@ export default function HomePage() {
               style={{ background: 'rgba(139,26,26,0.3)', color: '#F5F0E8', border: 'none', borderRadius: '6px', padding: '2px 8px', fontSize: '12px', cursor: 'pointer' }}>x</button>
           </div>
         )}
-        <input ref={fileInputRef} type="file" accept="image/*" className="hidden"
+        <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}} style={{display:"none"}}
           onChange={e => {
             const file = e.target.files?.[0]; if (!file) return
             setSelectedFile(file)

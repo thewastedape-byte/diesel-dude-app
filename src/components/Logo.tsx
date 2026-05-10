@@ -6,12 +6,12 @@ interface LogoProps {
 }
 
 export default function Logo({ size = 'md' }: LogoProps) {
-  const sizes = { sm: 48, md: 64, lg: 96 }
+  const sizes = { sm: 80, md: 100, lg: 140 }
   const px = sizes[size]
   return (
     <div className="flex items-center gap-2">
       <Image src="/logo.png" alt="Diesel Dude" width={px} height={px} style={{ objectFit: 'contain' }} priority />
-      {size !== 'sm' && (
+      {(
         <div>
           <p className="font-bold leading-none" style={{ color: '#C68B3A', fontFamily: 'Georgia, serif', fontSize: size === 'lg' ? '22px' : '16px' }}>
             Diesel Dude
