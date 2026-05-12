@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Sitemap: https://diesel-dude-app.onrender.com/sitemap.xml

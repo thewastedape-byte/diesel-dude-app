@@ -3,19 +3,72 @@ import './globals.css'
 import Analytics from '@/components/Analytics'
 
 export const metadata: Metadata = {
-  title: 'Diesel Dude by WastedApe',
-  description: 'AI diesel diagnostic assistant — from pickup trucks to heavy equipment. Your digital motor pool.',
+  title: 'Diesel Dude AI — Diesel Engine Diagnostics for Mechanics & Fleet Shops',
+  description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders. Free plan available.',
+  keywords: 'diesel mechanic AI, diesel engine diagnostics, fleet maintenance AI, fault code lookup, DPF cleaning, DEF system repair, heavy equipment diagnostics',
   themeColor: '#3D1C02',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  openGraph: {
+    title: 'Diesel Dude AI — Diesel Engine Diagnostics for Mechanics & Fleet Shops',
+    description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders. Free plan available.',
+    url: 'https://diesel-dude-app.onrender.com',
+    siteName: 'Diesel Dude AI',
+    images: [
+      {
+        url: 'https://diesel-dude-app.onrender.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Diesel Dude AI — Diesel Engine Diagnostics',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Diesel Dude AI — Diesel Engine Diagnostics for Mechanics & Fleet Shops',
+    description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders.',
+    images: ['https://diesel-dude-app.onrender.com/og-image.jpg'],
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Diesel Dude AI',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  url: 'https://diesel-dude-app.onrender.com',
+  description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders for Cummins, CAT, Detroit, John Deere engines.',
+  offers: [
+    {
+      '@type': 'Offer',
+      name: 'Hitchhiker (Free)',
+      price: '0',
+      priceCurrency: 'USD',
+      description: '1 free question every 6 hours',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Grease Monkey',
+      price: '19.99',
+      priceCurrency: 'USD',
+      description: 'Unlimited AI diagnostics, manual search, work orders',
+    },
+  ],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE_HERE" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="mobile-web-app-capable" content="yes" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="bg-plate min-h-screen">
         <Analytics />

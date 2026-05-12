@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://diesel-dude-app.onrender.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://diesel-dude-app.onrender.com/login</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://diesel-dude-app.onrender.com/signup</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://diesel-dude-app.onrender.com/upgrade</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://diesel-dude-app.onrender.com/terms</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+</urlset>
