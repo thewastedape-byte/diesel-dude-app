@@ -42,6 +42,10 @@ export default function LoginPage() {
             Your digital motor pool
           </p>
         </div>
+        <div className="mb-6 px-4 py-3 rounded-lg text-sm text-center" style={{ background: 'rgba(198,139,58,0.15)', border: '1px solid rgba(198,139,58,0.5)', color: '#F5F0E8', fontFamily: 'Georgia, serif' }}>
+          🔧 <strong>Diesel Dude is currently under construction.</strong><br />
+          <span style={{ color: 'rgba(245,240,232,0.6)', fontSize: '12px' }}>We&apos;re upgrading the engine. Check back soon — something bigger is coming.</span>
+        </div>
         <div className="panel p-6">
           <h1 className="text-xl font-bold text-center mb-6" style={{ color: '#F5F0E8', fontFamily: 'Georgia, serif' }}>Sign In</h1>
           {error && (
