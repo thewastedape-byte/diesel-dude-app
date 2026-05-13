@@ -31,6 +31,7 @@ export default function HomePage() {
   const [manualMode, setManualMode] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
+  const cameraInputRef = useRef<HTMLInputElement>(null)
 
   const rawAuth = getAuth()
   const isAdmin = rawAuth?.email && ADMIN_EMAILS.includes(rawAuth.email.toLowerCase())
@@ -236,7 +237,15 @@ export default function HomePage() {
               style={{ background: 'rgba(139,26,26,0.3)', color: '#F5F0E8', border: 'none', borderRadius: '6px', padding: '2px 8px', fontSize: '12px', cursor: 'pointer' }}>x</button>
           </div>
         )}
-        <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}} style={{display:"none"}}
+        <input ref={fileInputRef} type="file" accept="image/*" style={{display:"none"}}
+          onChange={e => {
+            const file = e.target.files?.[0]; if (!file) return
+            setSelectedFile(file)
+            const reader = new FileReader()
+            reader.onload = ev => setImagePreview(ev.target?.result as string)
+            reader.readAsDataURL(file)
+          }} />
+        <input ref={cameraInputRef} type="file" accept="image/*" capture="environment" style={{display:"none"}}
           onChange={e => {
             const file = e.target.files?.[0]; if (!file) return
             setSelectedFile(file)
@@ -245,7 +254,7 @@ export default function HomePage() {
             reader.readAsDataURL(file)
           }} />
         <div className="flex items-end gap-2">
-          <button onClick={() => fileInputRef.current?.click()}
+          <button onClick={() => cameraInputRef.current?.click()}
             className="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
             style={{ background: imagePreview ? '#C68B3A' : 'rgba(198,139,58,0.15)', color: imagePreview ? '#3D1C02' : '#C68B3A', border: '1px solid rgba(198,139,58,0.3)', fontSize: '18px', cursor: 'pointer' }}>
             &#128247;
@@ -262,9 +271,9 @@ export default function HomePage() {
             onChange={e => setInput(e.target.value)}
             onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage() } }}
             style={{ minHeight: '42px', maxHeight: '120px', paddingTop: '11px', paddingBottom: '11px' }} />
-          <button onClick={() => sendMessage()} disabled={loading || !input.trim()}
+          <button onClick={() => sendMessage()} disabled={loading || (!input.trim() && !selectedFile)}
             className="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center text-lg font-bold"
-            style={{ background: (loading || !input.trim()) ? 'rgba(198,139,58,0.15)' : '#C68B3A', color: (loading || !input.trim()) ? 'rgba(198,139,58,0.3)' : '#3D1C02', border: '1px solid rgba(198,139,58,0.3)', cursor: 'pointer' }}>
+            style={{ background: (loading || (!input.trim() && !selectedFile)) ? 'rgba(198,139,58,0.15)' : '#C68B3A', color: (loading || (!input.trim() && !selectedFile)) ? 'rgba(198,139,58,0.3)' : '#3D1C02', border: '1px solid rgba(198,139,58,0.3)', cursor: 'pointer' }}>
             &#x27A4;
           </button>
         </div>
