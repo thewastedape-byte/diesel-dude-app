@@ -256,8 +256,15 @@ export default function HomePage() {
         <div className="flex items-end gap-2">
           <button onClick={() => cameraInputRef.current?.click()}
             className="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
+            title="Take photo"
             style={{ background: imagePreview ? '#C68B3A' : 'rgba(198,139,58,0.15)', color: imagePreview ? '#3D1C02' : '#C68B3A', border: '1px solid rgba(198,139,58,0.3)', fontSize: '18px', cursor: 'pointer' }}>
             &#128247;
+          </button>
+          <button onClick={() => fileInputRef.current?.click()}
+            className="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
+            title="Upload from gallery"
+            style={{ background: 'rgba(198,139,58,0.15)', color: '#C68B3A', border: '1px solid rgba(198,139,58,0.3)', fontSize: '18px', cursor: 'pointer' }}>
+            &#128190;
           </button>
           <button onClick={() => setManualMode(!manualMode)}
             title="Search service manuals"
