@@ -69,8 +69,11 @@ export default function HomePage() {
     try {
       const asset = JSON.parse(localStorage.getItem('dd_active_asset') || '{}')
       const assetContext = asset.make ? `Asset: ${asset.year || ''} ${asset.make} ${asset.model || ''}, Engine: ${asset.engine || 'diesel'}, Hours: ${asset.hours || 'unknown'}` : ''
+      // Build conversation history for context (last 20 messages, exclude the one just added)
+      const historyForApi = messages.map(m => ({ role: m.role, content: m.content }))
+
       let endpoint = `${API_URL}/api/chat`
-      let body: any = { message: msg, sessionId: localStorage.getItem('dd_session') || 'default', assetContext }
+      let body: any = { message: msg, sessionId: localStorage.getItem('dd_session') || 'default', assetContext, history: historyForApi }
       if (imagePreview) {
         endpoint = `${API_URL}/api/analyze`
         body = { image: imagePreview, question: msg, assetContext }
