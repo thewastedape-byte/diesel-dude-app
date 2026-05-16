@@ -6,16 +6,17 @@ export const metadata: Metadata = {
   title: 'Diesel Dude AI — Diesel Engine Diagnostics for Mechanics & Fleet Shops',
   description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders. Free plan available.',
   keywords: 'diesel mechanic AI, diesel engine diagnostics, fleet maintenance AI, fault code lookup, DPF cleaning, DEF system repair, heavy equipment diagnostics',
+  verification: { google: 'Zrg5ePMuJ9M3yRDiBrxcToBMe7bI0fpHQfpuio2og2E' },
   themeColor: '#3D1C02',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   openGraph: {
     title: 'Diesel Dude AI — Diesel Engine Diagnostics for Mechanics & Fleet Shops',
     description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders. Free plan available.',
-    url: 'https://diesel-dude-app.onrender.com',
+    url: 'https://dieseldude.thewastedape.com',
     siteName: 'Diesel Dude AI',
     images: [
       {
-        url: 'https://diesel-dude-app.onrender.com/og-image.jpg',
+        url: 'https://dieseldude.thewastedape.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Diesel Dude AI — Diesel Engine Diagnostics',
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Diesel Dude AI — Diesel Engine Diagnostics for Mechanics & Fleet Shops',
     description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders.',
-    images: ['https://diesel-dude-app.onrender.com/og-image.jpg'],
+    images: ['https://dieseldude.thewastedape.com/og-image.jpg'],
   },
 }
 
@@ -37,7 +38,7 @@ const jsonLd = {
   name: 'Diesel Dude AI',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
-  url: 'https://diesel-dude-app.onrender.com',
+  url: 'https://dieseldude.thewastedape.com',
   description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders for Cummins, CAT, Detroit, John Deere engines.',
   offers: [
     {
