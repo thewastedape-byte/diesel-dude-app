@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Diesel Dude AI — Diesel Engine Diagnostics for Mechanics & Fleet Shops',
   description: 'AI assistant for diesel mechanics and fleet maintenance. Fault codes, DEF/DPF/EGR diagnostics, repair guides, work orders. Free plan available.',
   keywords: 'diesel mechanic AI, diesel engine diagnostics, fleet maintenance AI, fault code lookup, DPF cleaning, DEF system repair, heavy equipment diagnostics',
-  verification: { google: 'Zrg5ePMuJ9M3yRDiBrxcToBMe7bI0fpHQfpuio2og2E' },
+  verification: { google: 'kC5ejZEO7H6cMXus3fszzyG8upBBvGFg9H4Prk7FQl0' },
   themeColor: '#3D1C02',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   openGraph: {
